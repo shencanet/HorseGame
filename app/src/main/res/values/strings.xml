@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">HorseGame</string>
 
+    <string name="title">Horse Challenge</string>
+    <string name="level">Level</string>
+    <string name="Moves">HorseGame</string>
+    <string name="Time">HorseGame</string>
+    <string name="lives">HorseGame</string>
+    <string name="options">HorseGame</string>
+    <string name="instructions">HorseGame</string>
+    <string name="credits">HorseGame</string>
+
+
 </resources>
