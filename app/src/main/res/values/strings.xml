@@ -3,12 +3,20 @@
 
     <string name="title">Horse Challenge</string>
     <string name="level">Level</string>
-    <string name="Moves">HorseGame</string>
-    <string name="Time">HorseGame</string>
-    <string name="lives">HorseGame</string>
-    <string name="options">HorseGame</string>
-    <string name="instructions">HorseGame</string>
-    <string name="credits">HorseGame</string>
+    <string name="moves">Moves</string>
+    <string name="time">Time</string>
+    <string name="lives">Lives</string>
+    <string name="options">Options></string>
+    <string name="instructions">Move the horse over board to complete cells</string>
+    <string name="credits">Game created by shen</string>
+
+    <string name="premium">Tap here to remove ads, get more levels and unlimited lives</string>
+    <string name="premiumTitle">Get Premium Access Forever </string>
+    <string name="PremiumBenefit1">No more Ads</string>
+    <string name="premiumBenefit2">Unlimited lives</string>
+    <string name="premiumBenefit3">Keep your reached level</string>
+    <string name="pay">PAY ONLY 1$ NOW</string>
+
 
 
 </resources>
