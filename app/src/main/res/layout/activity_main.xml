@@ -35,8 +35,15 @@
         android:id="@+id/svGame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lyPremium">
+        android:layout_below="@id/lyPremium"
+        android:paddingBottom="70dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
     </ScrollView>
 
 
