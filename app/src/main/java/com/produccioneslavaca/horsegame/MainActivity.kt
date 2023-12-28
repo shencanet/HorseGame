@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         for (i in 0..7){
             for(j in 0..7){
                 iv = findViewById(resources.getIdentifier("c$i$j","id" , packageName))
+                var height = TypedValue.applyDimension(TypeValue.COMPLEX_UNIT_DIP, height_cell, getResources().getDisplayMetrics()).toInt()
+                var width  = TypedValue.applyDimension(TypeValue.COMPLEX_UNIT_DIP, height_cell, getResources().getDisplayMetrics()).toInt()
+                iv.setLayoutParams(TableRow.layoutParams(width, height))
 
             }
         }
