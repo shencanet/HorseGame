@@ -28,7 +28,11 @@ class MainActivity : AppCompatActivity() {
         val display = windowManager.defaultDisplay
         val size = point()
         display.getsize(size)
-        
+        val widht = size.x
+        val width_dp = (width / getResources().getDisplayMetrics().density)
+        val lateralMarginDP = 0
+        val widht_cell (width_dp - lateralMarginsDP)/8
+        val height_cell = widht_cell
 
         
         for (i in 0..7){
