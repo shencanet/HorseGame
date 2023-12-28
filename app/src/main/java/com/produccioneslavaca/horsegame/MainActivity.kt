@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun setSizeBoard(){
         var iv: ImageView
+        val display = windowManager.defaultDisplay
+        val size = point()
+        display.getsize(size)
+        
+
+        
         for (i in 0..7){
             for(j in 0..7){
                 iv = findViewById(resources.getIdentifier("c$i$j","id" , packageName))
