@@ -4,8 +4,20 @@ TODO LIST
 
 
 ****FUNCIONALIDADES*****
+un color para la posicion actual y otro para el rastro
+inicio aleatorio
+mover el caballo en l
+pintar nivele y limpiarlo
+control movimientos
+control vidas
+mostrar publicidad
+pagar para users premium
+compartir resultados
 
 
 ****COSAS MEJORAS FUTURAS ******
 
+
 ****LOGICA JUEGO******
+
+
