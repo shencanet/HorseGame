@@ -30,7 +30,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun paintHorseCell(){
-        
+        var iv: ImageView = findViewById(resources.getIdentifier("c$x$y","id" , packageName))
+        iv.setBackgroundColor(ContextCompat.getColor(this, resources.getIdentifier(color, "color", packageName)))
+        iv.setImageResource(R.drawable.giphy)
     }
     
 
