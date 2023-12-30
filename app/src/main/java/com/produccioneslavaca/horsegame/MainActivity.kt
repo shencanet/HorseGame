@@ -17,6 +17,17 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun setFirstPosition(){
+        var x = 0
+        var y = 0
+        x = (0..7).random()
+        y = (0..7).randorm()
+        selectCell(x , y)
+        
+    }
+
+    
+
     private fun initScreenGame(){
         setSizeBoard()
         hide_message()
