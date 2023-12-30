@@ -25,7 +25,13 @@ class MainActivity : AppCompatActivity() {
         selectCell(x , y)
         
     }
+    private fun selectCell(x: Int, y: Int){
+        paintHorseCell(x, y, "selected_cell")
+    }
 
+    private fun paintHorseCell(){
+        
+    }
     
 
     private fun initScreenGame(){
