@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 
 class MainActivity : AppCompatActivity() {
+    private var cellSelected_x = 0
+    private var cellSelected_y = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,12 +22,16 @@ class MainActivity : AppCompatActivity() {
     private fun setFirstPosition(){
         var x = 0
         var y = 0
+
         x = (0..7).random()
         y = (0..7).randorm()
+        cellSelected_x = x
+        cellSelected_y = y
         selectCell(x , y)
         
     }
     private fun selectCell(x: Int, y: Int){
+        paintHorseCell(cellSelected_x, cellSelected_y, "previous_cell")
         paintHorseCell(x, y, "selected_cell")
     }
 
