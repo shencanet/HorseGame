@@ -4,7 +4,7 @@ TODO LIST
 
 
 ****FUNCIONALIDADES*****
-un color para la posicion actual y otro para el rastro
+un color para la posicion actual y otro para el rastro77hechp
 inicio aleatorio
 mover el caballo en l
 pintar nivele y limpiarlo
