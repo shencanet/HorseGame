@@ -10,6 +10,7 @@ mover el caballo en l
 pintar nivele y limpiarlo
 control movimientos
 control vidas
+
 mostrar publicidad
 pagar para users premium
 compartir resultados
