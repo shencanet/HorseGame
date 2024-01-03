@@ -45,14 +45,17 @@ class MainActivity : AppCompatActivity() {
         var y = 0
 
         x = (0..7).random()
-        y = (0..7).randorm()
+        y = (0..7).random()
         cellSelected_x = x
         cellSelected_y = y
         selectCell(x , y)
         
     }
     private fun selectCell(x: Int, y: Int){
+        board[x][y] = 1
         paintHorseCell(cellSelected_x, cellSelected_y, "previous_cell")
+        cellSelected_x = x
+        cellSelected_y = y
         paintHorseCell(x, y, "selected_cell")
     }
 
