@@ -15,9 +15,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initScreenGame()
+        resetboard()
         setFirstPosistion()
 
 
+    }
+
+    private fun resetboard(){
+        
     }
 
     private fun setFirstPosition(){
