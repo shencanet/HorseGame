@@ -21,6 +21,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    // 0 esta libre
+    //1 casilla marcada
+    //2 es un bonus
+    //3 es una opcion de movimiento actual
+
     private fun resetboard(){
         board = arrayOf(
             intArrayOf(0,0,0,0,0,0,0,0),
