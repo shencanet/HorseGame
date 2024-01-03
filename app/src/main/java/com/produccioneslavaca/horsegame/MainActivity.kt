@@ -22,7 +22,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun resetboard(){
-        
+        board = arrayOf(
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            
+        )
     }
 
     private fun setFirstPosition(){
