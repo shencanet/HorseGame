@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
     private checkCellClicked(View){
         var name = v.tag.toString()
         var x = name.subSequence(1,2).toString().toInt()
+        var y = name.subSequence(2,3).toString().toInt()  
+
+        checkCell(x, y)
+    }
+
+    private fun checkcell(x: Int, y: Int){
+        
     }
 
     // 0 esta libre
