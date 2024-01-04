@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    private checkCellClicked(View){
+        var name = v.tag.toString()
+        var x = name.subSequence(1,2).toString().toInt()
+    }
 
     // 0 esta libre
     //1 casilla marcada
