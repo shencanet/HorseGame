@@ -34,6 +34,15 @@ class MainActivity : AppCompatActivity() {
         var dif_y = y - cellSelected_y
         var checkTrue = false
         
+        if (dif_x == 1  && dif_y == 2) checkTrue = true //right top long
+        if (dif_x == 1  && dif_y == -2) checkTrue = true //right bottom long
+        if (dif_x == 2  && dif_y == 1) checkTrue = true //right long top
+        if (dif_x == 2  && dif_y == -1) checkTrue = true //right long bottom
+        if (dif_x == -1 && dif_y == 2) checkTrue = true //lef top long
+        if (dif_x == -1 && dif_y == -2) checkTrue = true //left bottom long
+        if (dif_x == -2 && dif_y == 1) checkTrue = true //left long top
+        if (dif_x == -2 && dif_y == -1) checkTrue = true //left long bottom
+        
     
     }
 
