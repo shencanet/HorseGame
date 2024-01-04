@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkcell(x: Int, y: Int){
         
+        var dif_x = x - cellSelected_x
+        var dif_y = y - cellSelected_y
+        var checkTrue = false
+        
+    
     }
 
     // 0 esta libre
