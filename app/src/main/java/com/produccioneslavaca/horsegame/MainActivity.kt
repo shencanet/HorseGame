@@ -42,6 +42,9 @@ class MainActivity : AppCompatActivity() {
         if (dif_x == -1 && dif_y == -2) checkTrue = true //left bottom long
         if (dif_x == -2 && dif_y == 1) checkTrue = true //left long top
         if (dif_x == -2 && dif_y == -1) checkTrue = true //left long bottom
+
+        if (board[x][y] == 1) checkTrue = false
+        if(checkTrue) selectCell(x, Y)
         
     
     }
