@@ -82,9 +82,21 @@ class MainActivity : AppCompatActivity() {
     private fun selectCell(x: Int, y: Int){
         board[x][y] = 1
         paintHorseCell(cellSelected_x, cellSelected_y, "previous_cell")
+        
+
+        
         cellSelected_x = x
         cellSelected_y = y
+        
         paintHorseCell(x, y, "selected_cell")
+
+        checkOptions(x, y)
+            
+        
+    }
+
+    private fun checkOptions(x: int, y:Int){
+        
     }
 
     private fun paintHorseCell(){
