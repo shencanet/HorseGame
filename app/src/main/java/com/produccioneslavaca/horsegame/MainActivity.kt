@@ -9,6 +9,7 @@ import android.widget.LinearLayout
 class MainActivity : AppCompatActivity() {
     private var cellSelected_x = 0
     private var cellSelected_y = 0
+    private var options = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -96,7 +97,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkOptions(x: int, y:Int){
-        
+        options = 0
+        checkMove(x, y, 1, 2) //check move right - top long
+        checkMove(x, y, 2 ,1) //check move right long -top
+        checkMove(x, y, 1 ,-2)//check move  right - bottom long
+        checkMove(x, y, 2 ,-1)//check move right -long - bottom
+        checkMove(x, y, -1 ,2)//check move  left -top long
+        checkMove(x, y, -2 ,1)//check move left -long top
+        checkMove(x, y, -1 ,-2)//check move left - bottom long
+        checkMove(x, y, -2 ,-1)//check move left long - bottom
     }
 
     private fun paintHorseCell(){
