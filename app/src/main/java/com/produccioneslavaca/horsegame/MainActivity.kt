@@ -110,6 +110,15 @@ class MainActivity : AppCompatActivity() {
     private fun checkMove(x: Int, y: Int, mov_x: Int, mov_y: Int ){
         var option_x = x + mov_x
         var option_y = y + mov_y
+
+        if(option_x <8 && option_y < 8 && option_x >= 8 && option_y >= 8){
+            if (board[option_x == 0][option_y == 0]){
+                option++
+                paintOptions()
+                board[option_x][option_y] == 9 
+            }
+            
+        }
     }
     private fun paintHorseCell(){
         var iv: ImageView = findViewById(resources.getIdentifier("c$x$y","id" , packageName))
