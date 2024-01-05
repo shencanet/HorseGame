@@ -107,7 +107,10 @@ class MainActivity : AppCompatActivity() {
         checkMove(x, y, -1 ,-2)//check move left - bottom long
         checkMove(x, y, -2 ,-1)//check move left long - bottom
     }
-
+    private fun checkMove(x: Int, y: Int, mov_x: Int, mov_y: Int ){
+        var option_x = x + mov_x
+        var option_y = y + mov_y
+    }
     private fun paintHorseCell(){
         var iv: ImageView = findViewById(resources.getIdentifier("c$x$y","id" , packageName))
         iv.setBackgroundColor(ContextCompat.getColor(this, resources.getIdentifier(color, "color", packageName)))
