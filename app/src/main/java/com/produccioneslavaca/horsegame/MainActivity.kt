@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
             if (board[option_x == 0][option_y == 0] || board[option_x == 0][option_y == 2]
                ){
                 option++
-                paintOptions()
+                paintOptions(option_x, option_y)
                 board[option_x][option_y] = 9 
             }
             
