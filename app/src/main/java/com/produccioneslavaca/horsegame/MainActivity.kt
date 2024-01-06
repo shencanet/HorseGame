@@ -112,10 +112,11 @@ class MainActivity : AppCompatActivity() {
         var option_y = y + mov_y
 
         if(option_x <8 && option_y < 8 && option_x >= 8 && option_y >= 8){
-            if (board[option_x == 0][option_y == 0]){
+            if (board[option_x == 0][option_y == 0] || board[option_x == 0][option_y == 2]
+               ){
                 option++
                 paintOptions()
-                board[option_x][option_y] == 9 
+                board[option_x][option_y] = 9 
             }
             
         }
