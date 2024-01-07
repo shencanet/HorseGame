@@ -1,11 +1,11 @@
 package com.produccioneslavaca.horsegame
 
+import android.graphics.Point
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.graphics.Point
-import android.util.TypedValue
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -62,13 +62,56 @@ class MainActivity : AppCompatActivity() {
         checkOptions(x, y)
     }
 
-    // ... (rest of the code remains unchanged)
+    private fun checkOptions(x: Int, y: Int) {
+        options = 0
+        checkMove(x, y, 1, 2) //check move right - top long
+        checkMove(x, y, 2, 1) //check move right long -top
+        checkMove(x, y, 1, -2)//check move  right - bottom long
+        checkMove(x, y, 2, -1)//check move right -long - bottom
+        checkMove(x, y, -1, 2)//check move  left -top long
+        checkMove(x, y, -2, 1)//check move left -long top
+        checkMove(x, y, -1, -2)//check move left - bottom long
+        checkMove(x, y, -2, -1)//check move left long - bottom
+    }
+
+    private fun checkMove(x: Int, y: Int, mov_x: Int, mov_y: Int) {
+        var option_x = x + mov_x
+        var option_y = y + mov_y
+
+        if (option_x >= 0 && option_y >= 0 && option_x < 8 && option_y < 8) {
+            if (board[option_x][option_y] == 0 || board[option_x][option_y] == 2) {
+                options++
+                paintOptions(option_x, option_y)
+                board[option_x][option_y] = 9
+            }
+        }
+    }
 
     private fun paintHorseCell(x: Int, y: Int, color: String) {
         val iv: ImageView = findViewById(resources.getIdentifier("c$x$y", "id", packageName))
         iv.setBackgroundColor(ContextCompat.getColor(this, resources.getIdentifier(color, "color", packageName)))
         // Make sure to have the image resource "giphy" available in your resources
         iv.setImageResource(R.drawable.giphy)
+    }
+
+    private fun resetboard() {
+        board = Array(8) { IntArray(8) { 0 } }
+    }
+
+    private fun setFirstPosition() {
+        var x = 0
+        var y = 0
+
+        x = (0..7).random()
+        y = (0..7).random()
+        cellSelected_x = x
+        cellSelected_y = y
+        selectCell(x, y)
+    }
+
+    private fun initScreenGame() {
+        setSizeBoard()
+        hide_message()
     }
 
     private fun setSizeBoard() {
@@ -91,5 +134,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun hide_message() {
+        val lyMessage = findViewById<LinearLayout>(R.id.lyMessage)
+        lyMessage.visibility = View.INVISIBLE
+    }
 }
+
 
