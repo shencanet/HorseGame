@@ -141,7 +141,7 @@ private fun paintOptions(x:Int, y:Int){
         }
     }
 
-    private fun hide_message() {
+    private fun hide_message() {            
         val lyMessage = findViewById<LinearLayout>(R.id.lyMessage)
         lyMessage.visibility = View.INVISIBLE
     }
