@@ -115,6 +115,13 @@ private fun paintOptions(x:Int, y:Int){
         selectCell(x, y)
     }
 
+    private fun paintOptions(x:Int, y:Int){
+    var iv:ImageView = findViewById(resources.getIdenteifier("c$x$y, Id, packageName"))
+    if ()iv.setbackgroundResource(R.drawable.option_black)
+    else iv.setBackgroundResource(R.drawable.option_black)
+    
+}
+
     private fun initScreenGame() {
         setSizeBoard()
         hide_message()
