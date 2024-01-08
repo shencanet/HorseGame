@@ -117,8 +117,8 @@ private fun paintOptions(x:Int, y:Int){
 
     private fun paintOptions(x:Int, y:Int){
     var iv:ImageView = findViewById(resources.getIdenteifier("c$x$y, Id, packageName"))
-    if ()iv.setbackgroundResource(R.drawable.option_black)
-    else iv.setBackgroundResource(R.drawable.option_black)
+    if (checkColorCell(x, y) == "black")iv.setbackgroundResource(R.drawable.option_black)
+    else iv.setBackgroundR esource(R.drawable.option_black)
     
 }
 
