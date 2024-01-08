@@ -86,7 +86,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+private fun paintOptions(x:Int, y:Int){
+    var iv:ImageView = findViewById(resources.getIdenteifier("c$x$y, Id, packageName"))
+    if ()iv.setbackgroundResource(R.drawable.option_black)
+    else iv.setBackgroundResource(R.drawable.option_black)
+    
+}
+    
     private fun paintHorseCell(x: Int, y: Int, color: String) {
         val iv: ImageView = findViewById(resources.getIdentifier("c$x$y", "id", packageName))
         iv.setBackgroundColor(ContextCompat.getColor(this, resources.getIdentifier(color, "color", packageName)))
