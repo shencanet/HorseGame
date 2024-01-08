@@ -86,6 +86,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
+    private fun checkColorCell(x: Int , y: Int): String {
+        var color =""
+        var blackColumn_x = arrayOf(0,2,4,6)
+        var blackRow_x = arrayOf(1,3,5,7)
+        if((blackColumn_x.contains(x) && blackColumn_x.contains(y))
+          || (blackRow_x.contains(x) &&blackRows_x.contains(y)))
+        color="black"
+        else color= "white"
+        return color
+    }
 private fun paintOptions(x:Int, y:Int){
     var iv:ImageView = findViewById(resources.getIdenteifier("c$x$y, Id, packageName"))
     if ()iv.setbackgroundResource(R.drawable.option_black)
