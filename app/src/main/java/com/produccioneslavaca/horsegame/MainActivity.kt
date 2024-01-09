@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private var cellSelected_x = 0
     private var cellSelected_y = 0
     private var options = 0
+    private var moveoptions = 64
     private lateinit var board: Array<IntArray>
 
     override fun onCreate(savedInstanceState: Bundle?) {
