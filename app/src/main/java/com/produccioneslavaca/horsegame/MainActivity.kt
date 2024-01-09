@@ -56,10 +56,14 @@ class MainActivity : AppCompatActivity() {
 
         cellSelected_x = x
         cellSelected_y = y
-
+        clearOptions()
         paintHorseCell(x, y, "selected_cell")
 
         checkOptions(x, y)
+    }
+
+    private fun creaOptions(){
+        
     }
 
     private fun checkOptions(x: Int, y: Int) {
