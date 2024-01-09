@@ -52,6 +52,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun selectCell(x: Int, y: Int) {
+        moves--
+        var tvMovesData = findViewById<TextView>(R.id.tvMovesData)
+        tvMovesData.text = moves.toString()
         board[x][y] = 1
         paintHorseCell(cellSelected_x, cellSelected_y, "previous_cell")
 
@@ -61,6 +64,12 @@ class MainActivity : AppCompatActivity() {
         paintHorseCell(x, y, "selected_cell")
 
         checkOptions(x, y)
+
+        if (moves > 0 ){
+            checkNewBonus()
+            checkGameOver(x, y)
+        }
+        else checkSucessfulEnd()
     }
 
     private fun creaOptions(){
