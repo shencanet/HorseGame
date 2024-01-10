@@ -74,8 +74,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkNewBonus()  {
-        
+        if(moves%movesRequired == 0){
+            var bonusCell_x = 0
+            var bonusCell_Y = 0
+            var bonuscell = false
+            while (bonuscell == false) {
+                
+            }
+            
+        }
     }
+    
 
     private fun clearOption(x:Int, y:Int){
         var : iv ImageView = findViewById(resources.getIdentifier("c$x$y", "id", packageName))
