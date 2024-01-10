@@ -79,7 +79,8 @@ class MainActivity : AppCompatActivity() {
             var bonusCell_Y = 0
             var bonuscell = false
             while (bonuscell == false) {
-                
+                bonusCell_x = (0..7).random()
+                bonusCell_Y = (0..7).random()
             }
             
         }
