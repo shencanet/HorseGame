@@ -84,9 +84,13 @@ class MainActivity : AppCompatActivity() {
                 if(board[bonusCell_x][bonusCell_y] == 0 ) bonusCell = true
             }
             board[bonusCell_x][bonusCell_y] = 2
-            paintBonus()
+            paintBonusCell(bonusCell_y, bonusCell_x)
             
         }
+    }
+    private fun paintBonusCel(X:Int, y: Int){
+        var iv:ImageView = findViewById(resources.getIdentifier("c$x$y", "id", packageName))
+        iv.setImageResource(R.drawable.bonus)
     }
     
 
