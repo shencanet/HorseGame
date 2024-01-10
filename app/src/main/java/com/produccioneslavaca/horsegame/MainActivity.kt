@@ -81,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             while (bonuscell == false) {
                 bonusCell_x = (0..7).random()
                 bonusCell_Y = (0..7).random()
+                if(board[bonusCell_x][bonusCell_y] == 0 ) bonusCell = true
             }
             
         }
