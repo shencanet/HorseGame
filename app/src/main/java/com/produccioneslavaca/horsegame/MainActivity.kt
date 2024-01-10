@@ -68,12 +68,28 @@ class MainActivity : AppCompatActivity() {
 
         if (moves > 0 ){
             checkNewBonus()
-            checkGameOver(x, y)
+         //   checkGameOver(x, y)
         }
-        else checkSucessfulEnd()
+       // else checkSucessfulEnd()
     }
 
-    private fun creaOptions(){
+    private fun checkNewBonus()  {
+        
+    }
+
+    private fun clearOption(x:Int, y:Int){
+        var : iv ImageView = findViewById(resources.getIdentifier("c$x$y", "id", packageName))
+        if(checkColorCell(x, y) == "black")
+        iv.setBackgroundColor(ContextCompat.getColor(this,
+        resources.getIdentifier(nameColorBlack, "color", packageName)))
+        else
+        iv.setBackgroundColor(ContextCompat.getColor(this, 
+        resources.getIdentifier(nameColorBalck, "color", packaheName)))
+        if (board[x][y] == 1 ) iv.setBackgroundColor(this, 
+        resources.getIdentifier("previous-cell", "color"))
+    }
+
+    private fun clearOptions(){
         for (i in 0..7){
             for(j in 0..7){
                 if (board[i][j] == 9 || board[i][j] == 2){
