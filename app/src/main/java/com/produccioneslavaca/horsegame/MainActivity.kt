@@ -83,6 +83,8 @@ class MainActivity : AppCompatActivity() {
                 bonusCell_Y = (0..7).random()
                 if(board[bonusCell_x][bonusCell_y] == 0 ) bonusCell = true
             }
+            board[bonusCell_x][bonusCell_y] = 2
+            paintBonus()
             
         }
     }
