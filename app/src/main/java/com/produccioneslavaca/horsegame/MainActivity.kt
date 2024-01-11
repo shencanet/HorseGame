@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private var options = 0
     private var movesRequired = 4
     private var moveoptions = 64
+    private var bonus = 0
     private lateinit var board: Array<IntArray>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +56,12 @@ class MainActivity : AppCompatActivity() {
     private fun selectCell(x: Int, y: Int) {
         moves--
         var tvMovesData = findViewById<TextView>(R.id.tvMovesData)
-        tvMovesData.text = moves.toString()
+        tvMovesData.text = moves.toString()ç
+        if(board[x][y] = 1){
+            bonus++
+            var tvBonusData = findViewById<TextView>(R.id.tvBonusData)
+            tvBonusData.text = " + $bonus"
+        }
         board[x][y] = 1
         paintHorseCell(cellSelected_x, cellSelected_y, "previous_cell")
 
