@@ -56,7 +56,10 @@ class MainActivity : AppCompatActivity() {
     private fun selectCell(x: Int, y: Int) {
         moves--
         var tvMovesData = findViewById<TextView>(R.id.tvMovesData)
-        tvMovesData.text = moves.toString()ç
+        tvMovesData.text = moves.toString()
+
+        growProgressBonus()
+        
         if(board[x][y] = 1){
             bonus++
             var tvBonusData = findViewById<TextView>(R.id.tvBonusData)
@@ -79,6 +82,9 @@ class MainActivity : AppCompatActivity() {
        // else checkSucessfulEnd()
     }
 
+    private fun growProgressBonus(){
+        
+    }
     private fun checkNewBonus()  {
         if(moves%movesRequired == 0){
             var bonusCell_x = 0
