@@ -83,6 +83,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun growProgressBonus(){
+        var withBonus = ((with_bomus/moveRequired) * bonus_grow).toFloat()
+        
         var height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8F, getresources().getDisplayMetrics()).toInt
         var width = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8F, getresources().getDisplayMetrics()).toInt
         v.setLayoutParams(TableRow.Layout(width, height))
