@@ -83,6 +83,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun growProgressBonus(){
+        var 
+        var
+        v.setLayoutParams(TableRow.Layout(width, height))
         
     }
     private fun checkNewBonus()  {
