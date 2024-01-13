@@ -16,8 +16,10 @@ class MainActivity : AppCompatActivity() {
     private var options = 0
     private var width_bonus = 0
     private var movesRequired = 4
+    private var levelMoves = 64
     private var moveoptions = 64
     private var bonus = 0
+    private var moves = 64
     private lateinit var board: Array<IntArray>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,6 +87,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun growProgressBonus(){
+        var moves_done = levelmoves - moves
         var bonus_done = moves_done / movesRequired
         var moves_rest = movesRequired * (bonus_done)
         var bonus_grow = moves_done - moves_rest
