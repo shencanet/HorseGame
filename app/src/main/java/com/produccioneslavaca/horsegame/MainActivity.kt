@@ -85,6 +85,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun growProgressBonus(){
+        var bonus_done = moves_done / movesRequired
+        var moves_rest = movesRequired * (bonus_done)
+        var bonus_grow = moves_done - moves_rest
+
+        
         var withBonus = ((with_bomus/moveRequired) * bonus_grow).toFloat()
         
         var height = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8F, getresources().getDisplayMetrics()).toInt
@@ -223,6 +228,8 @@ private fun paintOptions(x:Int, y:Int){
         val lateralMarginDP = 0
         val width_cell = (width_dp - lateralMarginDP) / 8
         val height_cell = width_cell
+
+        widht_bonus = 2 * witdht_cell.toInt()
 
         for (i in 0..7) {
             for (j in 0..7) {
