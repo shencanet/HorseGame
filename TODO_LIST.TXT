@@ -14,7 +14,7 @@ control movimientos
 control vidas  ok
 
 mostrar publicidad
-pagar para users premium
+pagar para users premium ok
 compartir resultados
 
 
