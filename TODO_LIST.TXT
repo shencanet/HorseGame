@@ -15,7 +15,7 @@ control vidas  ok
 
 mostrar publicidad
 pagar para users premium ok
-compartir resultados
+compartir resultados ok
 
 
 ****COSAS MEJORAS FUTURAS ******
