@@ -11,6 +11,7 @@ mover el caballo en l
 pintar nivele y limpiarlo
 
 control movimientos
+
 control vidas  ok
 
 mostrar publicidad
