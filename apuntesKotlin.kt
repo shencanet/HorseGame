@@ -19,6 +19,14 @@ fun main(args: Array<String>) {
 
         val nombres: LIst<String>
 
+        val nombres = listOf("Juan", "Maria", "Luis")
+        print("${nombres.last()}")
+
+        val lista1 = lisOf("Argumentos ": args)
+        print(lista)
+        
+        
+
         
         
     }
