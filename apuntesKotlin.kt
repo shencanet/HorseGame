@@ -13,6 +13,13 @@ fun main(args: Array<String>) {
         
         //usar lista
        val resultadSuma =  lista.sum();
+
+        //COLECCION
+        val resultadoSumaconjunto = conjunto.sum()
+
+        val nombres: LIst<String>
+
+        
         
     }
 }
