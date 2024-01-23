@@ -88,6 +88,15 @@ class MainActivity : AppCompatActivity() {
        // else checkSucessfulEnd()
     }
 
+    private fun checkGameOver(x: Int, y: Int){
+        if(options == 0){
+            if(bonus == 0){
+                
+            }
+        }
+        
+    }
+
     private fun growProgressBonus(){
         var moves_done = levelmoves - moves
         var bonus_done = moves_done / movesRequired
