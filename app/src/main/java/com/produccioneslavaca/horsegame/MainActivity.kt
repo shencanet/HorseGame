@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import android.test //shen
+
 
 
 
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
         if (moves > 0 ){
             checkNewBonus()
-         //   checkGameOver(x, y)
+         checkGameOver(x, y)
         }
        // else checkSucessfulEnd()
     }
