@@ -39,3 +39,21 @@ fun main() {
         println("Error de Datos: ${ex.message}")
     }
 }
+
+
+data class Cliente(val nombre: String, val codigoPostal: Int)
+
+fun main() {
+    val clienteJuan = Cliente("Juan", 90)
+    val clienteMaria = clienteJuan.copy(nombre = "Maria")
+
+    println(clienteJuan.nombre)
+    println(clienteMaria.nombre)
+    println(clienteJuan.codigoPostal)
+    println(clienteMaria.codigoPostal)
+
+    val clienteJuanCambioSede = clienteJuan.copy(codigoPostal = 100)
+
+    println(clienteJuanCambioSede.codigoPostal)
+}
+
