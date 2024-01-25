@@ -2,8 +2,7 @@ TODO LIST
 
 *******BUGS******
 
-
-****FUNCIONALIDADES*****
+****FNCIONALIDADES*****
 
 inicio aleatorio
 mover el caballo en l
