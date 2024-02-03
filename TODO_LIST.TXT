@@ -2,6 +2,8 @@ TODO LIST
 
 *******BUGS******
 
+
+
 ****FNCIONALIDADES*****
 
 inicio aleatorio
